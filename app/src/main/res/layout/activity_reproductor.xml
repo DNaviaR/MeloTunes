@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageSong"
+        android:layout_width="399dp"
+        android:layout_height="443dp"
+        android:background="@drawable/imagenreproductor" />
+
+    <!-- Agregar TextView para el título de la canción -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloCancion"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/imageSong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Agregar TextView para el nombre del artista -->
+    <TextView
+        android:id="@+id/artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/artista"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+
+    <!-- Agregar barra de duración de la canción -->
+    <ProgressBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artista"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:enabled="false"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#FF0000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/backward"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:onClick="musicBefore"
+            android:src="@drawable/icon__backward"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/play"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:onClick="musicPlay"
+            android:src="@drawable/icon__play"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/forward"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:onClick="musicNext"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon__forward" />
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

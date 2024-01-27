@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MeloTunes</string>
+    <string name="reproductor">Reproductor</string>
+    <string name="listacanciones">Canciones</string>
+    <string name="buscador">Buscador</string>
+    <string name="perfil">Perfil</string>
+    <string name="nombre">Nombre</string>
+    <string name="correoElectronico">Correo electronico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="idioma">Idioma</string>
+    <string name="iniciarSesion">Iniciar sesion</string>
+    <string name="olvidarContraseña">Olvide mi contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="tituloCancion">Cancion</string>
+    <string name="artista">Artista</string>
+    <string name="loginIncorrecto">Usuario o contraseña incorrectos</string>
+    <string name="genero">Genero</string>
+</resources>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/reproductor"
+        android:enabled="true"
+        android:icon="@drawable/reproductor"
+        android:title="@string/reproductor"/>
+    <item
+        android:id="@+id/listaCanciones"
+        android:enabled="true"
+        android:icon="@drawable/listacanciones"
+        android:title="@string/listacanciones"/>
+    <item
+        android:id="@+id/busqueda"
+        android:enabled="true"
+        android:icon="@drawable/buscador"
+        android:title="@string/buscador"/>
+    <item
+        android:id="@+id/perfil"
+        android:enabled="true"
+        android:icon="@drawable/perfil"
+        android:title="@string/perfil"/>
+</menu>

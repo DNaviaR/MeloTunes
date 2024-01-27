@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="genero">Geschlecht</string>
+    <string name="app_name">MeloTunes</string>
+    <string name="reproductor">Spieler</string>
+    <string name="listacanciones">Lieder</string>
+    <string name="buscador">Suche</string>
+    <string name="perfil">Profil</string>
+    <string name="nombre">Name</string>
+    <string name="correoElectronico">Email</string>
+    <string name="contraseña">Passwort</string>
+    <string name="idioma">Sprache</string>
+    <string name="iniciarSesion">Anmeldung</string>
+    <string name="olvidarContraseña">Ich habe mein Passwort vergessen</string>
+    <string name="registrarse">Einchecken</string>
+    <string name="tituloCancion">Lied</string>
+    <string name="artista">Künstler</string>
+    <string name="loginIncorrecto">"Falscher Benutzername oder Passwort"</string>
+</resources>
